@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+
+<head>
+    <h1>Collage Student Information</h1>
+    <meta charset="UTF-8">
+    <meta name="author" content="Rajkumar">
+    <meta name="description" content="Fill The Collage Study Information Form">
+    <link type="text/css" rel="stylesheet" href="style.css">
+    <link type="php" href="action_page.php">
+</head>
+
+<body>
+    <fieldset class="fs">
+        <legend>
+            <h1>Details</h1>
+        </legend>
+        <h1>STUDENT INFORMATION</h1>
+        <form action="action_page.php" method="post" id="stdinfo" autocomplete="off">
+            <div>
+                <label for="name" id="n">Student name <span style="color:red">*</span>:</label>
+                <input type="text" range="10" class="kk" id="name" placeholder="name">
+            </div><br><br>
+            <div>
+                <label for="telephone_number" id="t">Mobile Number <span style="color:red">*</span>:</label>
+                <input type="tel" id="mobile_number" name="mobile_number" placeholder="Number" class="kk" i required>
+            </div><br><br>
+            <div>
+                <label for="email" id="e">Email <span style="color:red">*</span>:</label>
+                <input type="email" id="email" placeholder="email" class="kk">
+
+
+            </div>
+            <br><br>
+            <div>
+                <label for="password">Password <span style="color:red">*</span>:</label>
+                <input type="password" id="password" placeholder="enter password" min="10" max="16" class="kk" i required>
+
+            </div><br><br>
+            <div>
+                <label for="dob">D.O.B <span style="color:red">*</span> :</label>
+                <input type="date" id="dob" placeholder="dd/mm/yyyy" class="kk" value="22-03-2001" required>
+            </div><br><br>
+            <div>
+                <label for="clg_name ">Your Collage Name <span style="color:red">*</span> : </label>
+                <input type="text" id="clg_name" placeholder="collage name" class="kk">
+            </div><br><br>
+            <div>
+                <label for="batch">Your Batch </label>
+                <select name="batch" id="batch" class="kk">
+                <optgroup label="regulation 2008">
+                    <option value="2008">2008</option>
+                    <option value="2009">2009</option>
+                    <option value="2010">2010</option>
+                    <option value="2011">2011</option>
+                    <option value="2012">2012</option>
+                </optgroup>
+                <optgroup label="regulation 2013">
+                    <option value="2013">2013</option>
+                    <option value="2014">2014</option>
+                    <option value="2015">2015</option>
+                    <option value="2016">2016</option>
+                </optgroup>
+                    <optgroup label="regulation 2017">
+                        <option value="2017">2017</option>
+                        <option value="2018">2018</option>
+                        <option value="2019">2019</option>
+                        <option value="2020">2020</option>
+                        <option value="2021">2021</option>
+                    </optgroup>
+                    <optgroup label="regulation 2022">
+                        <option value="2022">2022</option>
+                    </optgroup>
+
+                
+
+            </select>
+            </div><br><br>
+            <div>
+                <fieldset id="br">
+                    <label for="branch">Your Branch :</label>
+                    <input type="radio" class="radio" value="auto" name="branch">
+                    <label for="auto">Auto</label>
+                    <input type="radio" class="radio" value="mech" name="branch">
+                    <label for="mech">Mech</label>
+                    <input type="radio" class="radio" value="civil" name="branch">
+                    <label for="civil">Civil</label>
+                    <input type="radio" class="radio" value="ece" name="branch">
+                    <label for="ece">ECE</label>
+                    <input type="radio" class="radio" value="eee" name="branch">
+                    <label for="eee">EEE</label>
+                    <input type="radio" class="radio" value="it" name="branch">
+                    <label for="it">IT</label>
+                    <input type="radio" class="radio" value="cse" name="branch">
+                    <label for="cse">CSE</label>
+                </fieldset>
+
+
+
+            </div><br><br>
+            <div>
+                <label for="gratuation">Graduation Month <span style="color:red">*</span>:</label>
+                <input type="month" name="month" class="kk">
+            </div><br><br>
+            <div>
+
+                <input type="checkbox" name="placement">
+                <label for="placement">Are You Placed</label>
+            </div><br><br>
+            <div>
+                <label for="mark sheets">Upload Your MarkSheet <span style="color:red">*</span> :</label>
+                <input type="file" name="marksheets" class="kk">
+            </div><br><br>
+            <div>
+                <input type="submit" class="kk" value="submit">
+            </div>
+            <br><br><br><br>
+    </fieldset>
+    </form>
+</body>
